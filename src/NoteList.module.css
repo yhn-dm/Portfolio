@@ -1,0 +1,31 @@
+.card {
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    cursor: pointer;
+    border: none;
+    background-color: #f8f9fa;
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fs-5 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.badge {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+}
