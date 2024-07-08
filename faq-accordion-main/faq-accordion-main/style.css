@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+- Font size (paragraphs): 16px
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700
+*/
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+
+    --fsW-400: 400;
+    --fsW-600: 600;
+    --fsW-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(./assets/images/background-pattern-desktop.svg) 0% 0%/100% no-repeat var(--Lightpink);
+    font-family: Work Sans, sans-serif;
+}
+
+h4{
+    font-size: 18px;
+    color: var(--Darkpurple);
+}
+
+main{
+    width: auto;
+}
+
+.container{
+    padding: 30px;
+    border-radius: 12px;
+    background-color: var(--Lightpink);
+    width: 580px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-weight: var(--fsW-700);
+    padding: 10px 0px;
+    color: var(--Darkpurple);
+}
+.header::before{
+    content: url(./assets/images/icon-star.svg);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.questioncont{
+    padding: 15px 0px;
+}
+
+.questioncont p{
+    padding: 15px 0px;
+    line-height: 22px;
+    color: var(--Grayishpurple)
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.toggle-btn{
+    border: 0px;
+    border-radius: 90px;
+}
+
+.hidden {
+    display: none;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);  /* Plus clair et plus transparent */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);  /* Plus clair et plus transparent */
+}
+
+@media only screen and (max-width: 376px) {
+    body{
+        font-size: 16px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: url(./assets/images/background-pattern-mobile.svg) top no-repeat var(--Lightpink);
+        font-family: Work Sans, sans-serif;
+    }
+    
+    .container{
+        width: 90%; 
+        margin: 0 auto; 
+        box-sizing: border-box;
+    }
+}

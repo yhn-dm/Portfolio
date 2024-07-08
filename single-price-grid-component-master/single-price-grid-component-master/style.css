@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+/* 
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+- Font size: 16px
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 15px;
+}
+
+main {
+    width: 635px;
+    height: 475px;
+}
+
+.container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.top-container {
+    background-color: white;
+    padding: 40px;
+    height: 45%;
+}
+
+.top-title h2 {
+    color: hsl(179, 62%, 43%);
+    margin-top: 0;
+}
+
+.top-undertitle h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+}
+
+.top-description {
+    color: hsl(218, 22%, 67%);
+    line-height: 24px;
+}
+
+.bot-container {
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+}
+
+.left-container {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    color: white;
+    padding: 40px;
+}
+
+.left-container h3 {
+    margin-top: 0px;
+}
+
+.right-container h3 {
+    margin-top: 0px;
+}
+
+
+.left-price {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.left-mensuality {
+    font-size: 14px;
+    color: hsl(204, 43%, 93%);
+    opacity: 0.3;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.price-mensuality {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-description {
+    padding: 10px 0px;
+}
+
+.left-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.left-button button {
+    background-color: hsl(71, 73%, 54%);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.left-button h3 {
+    margin: 12px;
+}
+
+.right-container {
+    background-color: hsl(179, 62%, 43%, 0.9);
+    width: 51%;
+    color: white;
+    padding: 40px;
+}
+
+.right-container p {
+    margin: 4px;
+}
+
+
+@media only screen and (max-width: 390px) {
+    main {
+        width: 330px;
+        height: auto;
+    }
+
+    .container{
+        width: auto;
+    }
+
+    .top-container {
+        padding: 22px;
+        height: 45%;
+    }
+
+    .top-description {
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+
+    .bot-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: auto;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-container {
+        width: auto;
+        padding: 22px;
+    }
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+- Blue: hsl(248, 32%, 49%)
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+- Font size: 16px
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: Poppins, sans-serif;
+  background: hsl(0, 100%, 74%) url(./images/bg-intro-desktop.png) no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 8.5% 10%;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55vw;
+}
+.left h1 {
+  color: white;
+  font-size: clamp(40px, 3.472vw, 100px);
+  line-height: 3.75vw;
+  padding-bottom: 2.083vw;
+}
+.left p {
+  color: white;
+  font-size: clamp(18px, 1.25vw, 100px);
+  font-weight: 400;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+}
+.right .try-it {
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 1.389vw;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /*span{
+      font-weight: 700;
+  }*/
+}
+.right .trial-form {
+  min-width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.right .trial-form input {
+  height: clamp(50px, 3.472vw, 70px);
+  border: 1px solid gray;
+  border-radius: 6px;
+  margin-bottom: 1.736vw;
+  padding-left: 30px;
+}
+.right .trial-form button {
+  margin-bottom: 1.042vw;
+  height: clamp(50px, 3.472vw, 70px);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+  border: 0px;
+  border-radius: 6px;
+}
+.right p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.764vw;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.right p span {
+  color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    background: hsl(0, 100%, 74%) url(./images/bg-intro-mobile.png) no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+    height: auto;
+  }
+  .left {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  .left h1 {
+    color: white;
+    font-size: clamp(36px, 3.472vw, 100px);
+    line-height: clamp(40px, 3.75vw, 100px);
+    padding-bottom: 30px;
+  }
+  .left p {
+    color: white;
+    font-size: clamp(14px, 1.25vw, 100px);
+    font-weight: 400;
+    padding-bottom: 60px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .right .try-it {
+    text-align: center;
+    min-width: auto;
+    padding: clamp(24px, 1.389vw, 100px);
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  .right .trial-form {
+    min-width: auto;
+    height: auto;
+    padding: clamp(24px, 1.389vw, 100px);
+  }
+  .right .trial-form input {
+    height: clamp(50px, 3.472vw, 70px);
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-bottom: clamp(20px, 1.736vw, 70px);
+    padding-left: 30px;
+  }
+  .right .trial-form button {
+    margin-bottom: clamp(10px, 1.042vw, 70px);
+    height: clamp(50px, 3.472vw, 70px);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+    border: 0px;
+    border-radius: 6px;
+  }
+  .right .trial-form input:invalid {
+    border: 2px solid red;
+  }
+  .right .trial-form input:valid {
+    border: 1px solid black;
+  }
+  .right p {
+    color: hsl(246, 25%, 77%);
+    font-size: clamp(13px, 0.764vw, 70px);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

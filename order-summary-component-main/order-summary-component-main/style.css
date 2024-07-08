@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    width: 460px;
+    height: 700px;
+}
+
+.cardcontainer {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.bodycardpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 35px 50px 50px 50px;
+    margin: initial;
+    height: 100%;
+}
+
+.backgroundpic {
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+.cardtitle h1 {
+    font-size: 29px;
+    font-weight: 900;
+    padding-top: 2px;
+}
+
+.carddescription {
+    color: hsl(224, 23%, 55%);
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 18px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+.subscribeplan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 22px 22px 22px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+}
+
+.time-pricecolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-right: 80px;
+}
+
+.timeplan {
+    h4{
+        margin: 0;
+        font-weight: 900;
+        font-size: 16px;
+    }
+}
+
+.priceplan {
+    p{
+        margin: 0;
+        color: hsl(224, 23%, 55%);
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.changeplanbtn button{
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.changeplanbtn button:hover{
+    color: hsl(224, 23%, 55%);
+    
+}
+
+
+
+.paymentbtn {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 31px;
+    padding-top: 14px;
+
+    button{
+        font-family: "Red Hat Display", sans-serif;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 15px;
+        border: 0px;
+    }
+}
+
+.paymentbtn button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancelbtn{
+    display: flex;
+    flex-direction: column;
+
+
+    button{
+        font-family: "Red Hat Display", sans-serif;
+        color: hsl(224, 23%, 55%);
+        background-color: white;
+        font-weight: 700;
+        font-size: 15px;
+        border: 0px;
+    }
+}
+
+.cancelbtn button:hover{
+    color: hsl(223, 47%, 23%);
+}

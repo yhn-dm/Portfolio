@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg-pattern-top.svg); /**/
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main{
+    width: 350px;
+    height: 375px;
+}
+
+.container{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.backgroundpic img{
+    position: relative; 
+}
+
+.picture img{
+    border-radius: 110px;
+    border: 5px solid;
+    color: white;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-bd{
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    align-items: center;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.age{
+    padding-left: 15px;
+    color: hsl(0, 0%, 59%);
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.city{    
+    padding: 10px 0px 15px 0px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+hr {
+    height: 0.1px; 
+    width: 100%; 
+    opacity: 0.3;
+    padding: 15px 0px 0px 0px;
+}
+
+.statsBloc{
+    display: flex;
+    flex-direction: row;
+}
+
+.followersBloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.followersCount{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.followersTitle{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.likesBloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 55px 0px 55px;
+    gap: 3px;
+}
+
+.likesCount{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.likesTitle{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.photosBloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.photosCount{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.photosTitle{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        width: 95%;
+    }
+
+    .picture img{
+        top: 44%;
+    }
+}

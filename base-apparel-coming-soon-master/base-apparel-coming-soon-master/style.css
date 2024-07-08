@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: Josefin Sans, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.left {
+  background-image: url(/5.4base-apparel-coming-soon-master/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.06rem, 4.444vw, 50rem) clamp(1.06rem, 11.111vw, 50rem);
+  width: 100%;
+}
+.left .top-l {
+  padding-bottom: 7vw;
+}
+.left .top-l img {
+  width: clamp(1rem, 10.972vw, 50rem);
+}
+.left .bot-l h1 {
+  text-transform: uppercase;
+  font-size: clamp(1.823rem, 4.861vw, 5.625rem);
+  font-weight: 600;
+  padding-bottom: 2.083vw;
+  letter-spacing: 1.111vw;
+  color: hsl(0, 6%, 24%);
+}
+.left .bot-l h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.left .bot-l p {
+  line-height: 2.083vw;
+  padding-bottom: 2.083vw;
+  color: hsl(0, 36%, 70%);
+  font-size: clamp(1rem, 1.181vw, 50rem);
+}
+.left .bot-l .email-form {
+  position: relative;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+}
+.left .bot-l .email-form input[type="email"] {
+  border: 1px solid grey;
+  outline: none;
+  flex-grow: 1;
+  padding: 18px 26px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+.left .bot-l .email-form button {
+  position: absolute;
+  right: 0px;
+  background-color: #fabea7;
+  border: none;
+  border-radius: 30px;
+  width: 90px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 1.111vw;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left .bot-l .email-form input::-moz-placeholder {
+  color: #aaa;
+  opacity: 0.8;
+}
+.left .bot-l .email-form input::placeholder {
+  color: #aaa;
+  opacity: 0.8;
+}
+
+.right {
+  height: 100%;
+  max-width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right img {
+  width: auto;
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+  -o-object-position: center;
+  object-position: center;
+}
+
+@media only screen and (max-width: 1025px) {
+  .left {
+    padding: clamp(1.06rem, 4.444vw, 50rem) 0px;
+  }
+  .right {
+    display: none;
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .mobile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+  }
+}

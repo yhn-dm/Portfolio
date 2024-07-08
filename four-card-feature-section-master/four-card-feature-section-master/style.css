@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 50px;
+}
+
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container{
+    width: 500px;
+    padding-bottom: 50px;
+}
+
+.header-title h1{
+    font-weight: 200;
+    font-size: 34px;
+    color: hsl(234, 12%, 34%);
+    margin: 15px 0px 0px;
+}
+
+
+.header-sc-title h1{
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0px;
+    color: hsl(234, 12%, 34%);
+}
+
+.title-description{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.box-title{    
+    color: hsl(234, 12%, 34%);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+}
+
+.box-description{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    padding-bottom: 3px;
+    text-align: left;
+    margin: 10px 0px 25px;
+}
+
+
+.box1, .box2, .box3, .box4{
+    padding: 30px 35px;
+    width: 300px;
+    box-shadow: 0px 12px 27px 3px rgba(0,0,0,0.1);
+    border-top: 4px solid;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.box1{
+    border-color: hsl(180, 62%, 55%);
+    justify-self: end;
+}
+
+.box2{
+    border-color: hsl(0, 78%, 62%);
+}
+
+.box3{
+    border-color: hsl(34, 97%, 64%);
+}
+
+.box4{
+    border-color: hsl(212, 86%, 64%);
+}
+
+.box1, .box4{
+    align-self: center;
+}
+
+@media only screen and (max-width: 376px) {
+    body{
+        padding: 0;
+        margin: 20px;
+    }
+
+    .header-container{
+        width: 300px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .header-title h1{
+        font-weight: 200;
+        font-size: 24px;
+        color: hsl(234, 12%, 34%);
+        margin: 15px 0px 0px;
+    }
+    
+    .header-sc-title h1{
+        font-weight: 600;
+        font-size: 24px;
+        margin: 0px;
+        color: hsl(234, 12%, 34%);
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .box1, .box2, .box3, .box4{
+        width: 80%;
+        padding: 25px 25px;
+    }
+
+    .box-description{
+        padding-bottom: 3px;
+        text-align: left;
+        margin: 5px 0px 25px;
+    }
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 15px;
+    margin: 0;
+}
+
+main {
+    width: 77%;
+    height: 448px;
+}
+
+.container {
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-part {
+    width: 52%;
+    padding: 70px;
+    padding-right: 100px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-part {
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 48%;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.overlay {
+    background: hsl(277deg, 100%, 50%, 0.42);
+    height: 100%;
+}
+
+.overlay2 {
+    background: hsl(293deg, 42%, 35%, 0.24);
+    height: 100%;
+    mix-blend-mode: color-burn;
+}
+
+h1{
+    margin: 0;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 70px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+}
+
+.stats{    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 70px;
+    letter-spacing: 1px;
+}
+
+.nCompanies, .nTemplates, .nQueries {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.nameCompanies, .nameTemplates, .nameQueries {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 375px) {
+    main {
+        width: 327px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+    
+    .left-part {
+        padding: 44px 26px 39px 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        text-align: center;
+    }
+    
+    .right-part {
+        height: 240px;
+        width: auto;
+    }
+
+    .title {
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .description {
+        padding-bottom: 40px;
+        letter-spacing: 0.8px;
+        line-height: 25px;
+        font-weight: normal;
+    }
+
+    .stats{    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    width: 576px;
+    height: 448px;
+}
+
+.productcontainer {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagepart {
+    width: 50%;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: cover;
+}
+
+.productpart {
+    font-family: "Fraunces", sans-serif;
+    font-size: 14px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.productkind {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 6px;
+    font-size: 12px;
+}
+
+.productname {
+    color: hsl(212, 21%, 14%);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1;
+
+}
+
+.productdescription {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.productprice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 85%;
+
+    .actualprice {
+        color: hsl(158, 36%, 37%);
+        font-size: 28px;
+        font-weight: 700;
+        padding-right: 16px;
+    }
+
+    .formerprice {
+        font-family: "Montserrat", sans-serif;
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+
+.productbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    opacity: 75%;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 14px 0px 14px 0px;
+    border: 0px;
+
+    img {
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    main{
+        width: 90%;
+        height: 90vh;
+    }
+
+    .productcontainer{
+        flex-direction: column;
+    }
+
+    .imagepart{
+        height: 40%;
+        width: auto;
+        background-image: url('./images/image-product-mobile.jpg');
+    }
+
+    .productpart{
+        height: 60%;
+        width: auto;
+        padding: 22px;
+    }
+
+}

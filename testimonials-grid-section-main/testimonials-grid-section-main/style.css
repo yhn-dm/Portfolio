@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+}
+
+main {
+    width: 77%;
+    height: 572px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.cont1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 8px;
+    width: 540px;
+    height: 282px;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+}
+
+.cont2 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 8px;
+    width: 255px;
+    height: 282px;
+}
+
+.cont3 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    width: 255px;
+    height: 266px;
+    color: hsl(217, 19%, 35%);
+}
+
+.cont4 {
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 8px;
+    width: 540px;
+    height: 266px;
+}
+
+.cont4 img{
+    border-color: hsl(263, 55%, 52%);
+}
+
+.cont5 {
+    grid-area: 1 / 4 / 3 / 5;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    width: 255px;
+    height: 572px;
+    color: hsl(217, 19%, 35%);
+}
+
+.cont-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-cont{
+    padding: 28px;
+}
+
+.pp {
+    width: 26px;
+    height: 26px;
+    border-radius: 60px;
+    margin-right: 10px;
+    border: 2px double #ffffff;
+}
+
+
+.name {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.status {
+    opacity: 50%;
+}
+
+.review-title {
+    font-size: 20.5px;
+    font-weight: 600;
+    padding: 14px 0px;
+}
+
+.review-paragraph {
+    opacity: 70%;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.cont1 {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 327px;
+    height: 443px;
+}
+
+.cont2 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 327px;
+    height: 240px;
+}
+
+.cont3 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 327px;
+    height: 240px;
+}
+
+.cont4 {
+    grid-area: 2 / 2 / 3 / 4;
+    width: 327px;
+    height: 443px;
+}
+
+.cont5 {
+    grid-area: 1 / 4 / 3 / 5;
+    width: 327px;
+    height: 443px;
+}
+
+.text-cont{
+    padding: 25px 29px;
+}
+
+.review-paragraph {
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+}

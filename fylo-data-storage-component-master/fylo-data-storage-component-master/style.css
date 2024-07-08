@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+main {
+    width: 920px;
+    height: 200px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.left-container {
+    background-color: hsl(228, 56%, 26%);
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border-top-right-radius: 90px;
+    padding-left: 30px;
+    gap: 30px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.icon1,
+.icon2,
+.icon3 {
+    background-color: hsl(229, 57%, 11%);
+    height: 48px;
+    width: 48px;
+
+    margin-right: 15px;
+    border: 0px solid;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1 img {
+    height: 28px;
+
+}
+
+.icon2 img {
+    height: 26px;
+}
+
+
+.right-container {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    background-color: hsl(228, 56%, 26%);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 540px;
+    height: 150px;
+    border-radius: 10px;
+    padding-left: 30px;
+
+}
+
+
+.left-quantity {
+    position: absolute;
+    background: white;
+    border-radius: .4em;
+    border-bottom-right-radius: 0;
+    height: 60px;
+    width: 180px;
+
+    text-transform: capitalize;
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 130px;
+    right: 34px;
+}
+
+.left-quantity h1 {
+    font-size: 40px;
+    margin-right: 10px;
+    color: hsl(229, 57%, 11%);
+}
+
+.left-quantity:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 28px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+
+
+.used-quantity span {
+    font-weight: 700;
+}
+
+.used-bar {
+    width: 460px;
+    height: 20px;
+    background-color: hsl(229, 57%, 11%);
+    border: 3px solid hsl(229, 57%, 11%);
+    border-radius: 12px;
+    margin: 10px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.used-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+
+    width: 81.5%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+
+.used-bar::after {
+    content: '';
+    position: absolute;
+
+    left: 80%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.min-quantity {
+    font-weight: 700;
+}
+
+.max-quantity {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url(/fylo-data-storage-component-master/images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top ;
+        background-size: cover;
+    }
+
+    main {
+        width: 326px;
+        height: 415px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+    }
+
+    .left-container {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .right-container {
+        width: 90%;
+        height: 160px;
+
+    }
+
+    .left-quantity {
+        bottom: -45px;
+        right: 70px;
+        border-radius: 12px;
+        height: 72px;
+    }
+
+    .left-quantity:after {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    .right-main-container {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .used-quantity {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .used-bar {
+        width: 100%;
+        height: 15px;
+    }
+
+    .used-bar::after {
+        left: 78.5%;
+        width: 10px;
+        height: 10px;
+    }
+
+}
